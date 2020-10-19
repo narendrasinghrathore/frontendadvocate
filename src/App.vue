@@ -1,10 +1,15 @@
 <template>
-  <main>
-    <div class="logo">
-      <div>NSR</div>
-    </div>
-    <Home msg="Welcome to Your Vue.js App" />
-  </main>
+  <div class="main-container">
+    <main>
+      <section>
+        <div aria-label="Logo text" class="logo">
+          <div aria-label="Narendra Singh Rathore logo">NSR</div>
+        </div>
+        <Home msg="Welcome to Your Vue.js App" />
+      </section>
+    </main>
+    <footer>&copy; Narendra Singh Rathore</footer>
+  </div>
 </template>
 
 <script>
@@ -23,13 +28,21 @@ html,
 body {
   margin: 0;
   font-weight: 1em;
+  background-color: #dedede;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 main {
-  background-color: #dedede;
+  flex: 1;
+  padding: 2vw;
   display: flex;
-  height: 100vh;
-  padding: 10px;
-  flex-direction: column;
+  box-sizing: border-box;
+}
+section {
+  flex-grow: 1;
 }
 .logo {
   border-radius: 50%;
@@ -41,5 +54,10 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 3vh;
+}
+footer {
+  border-top: 2px dashed #a5a5a5;
+  padding: 4px;
+  box-sizing: border-box;
 }
 </style>
