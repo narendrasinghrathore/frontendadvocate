@@ -52,7 +52,7 @@ section.flex {
   background-size: contain;
   border: none;
   outline: none;
-  min-width: 46vw;
+  min-width: 200px;
   flex-grow: 1;
 }
 .heading {
@@ -64,7 +64,6 @@ section.flex {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  min-width: 46vw;
 }
 h1 {
   font-size: 3em;
